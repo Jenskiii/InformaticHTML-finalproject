@@ -257,6 +257,10 @@ h3.heading {
   font-size: var(--fs-300);
   font-weight: var(--fw-default);
 }
+/* sets border on active page */
+.nav a[aria-current="page"] {
+  border-bottom: solid 2px hsl(var(--clr-purple-600));
+}
 
 /* mobile nav */
 .nav-hamburger {
@@ -286,18 +290,6 @@ h3.heading {
   gap: 1rem;
   align-items: center;
 }
-/* footer nav */
-.secondary-nav .nav {
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-@media screen and (min-width: 48rem) {
-  /* footer nav */
-  .secondary-nav .nav {
-    flex-direction: row;
-  }
-}
 @media screen and (max-width: 48rem) {
   .nav-hamburger {
     display: initial;
@@ -321,6 +313,20 @@ h3.heading {
   /* header nav */
   .primary-nav .nav.active {
     right: 0;
+  }
+}
+/* footer nav */
+.secondary-nav .nav {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-block: 1px solid hsl(var(--clr-purple-400) / 0.75);
+}
+@media screen and (min-width: 48rem) {
+  /* footer nav */
+  .secondary-nav .nav {
+    flex-direction: row;
+    border-block: none;
   }
 }
 
@@ -507,7 +513,6 @@ h3.heading {
     gap: 1rem;
   }
 }
-
 
 /* legends */
 .home-legends .card {
