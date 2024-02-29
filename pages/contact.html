@@ -17,16 +17,16 @@
 <body class="main-layout">
 
   <!-- HEADER -->
-  <header class="page-header | container" role="banner">
+  <header class="page-header | container">
     <a href="/index.html" class="logo-kickboksen" aria-label="Website logo with a link to the home page"></a>
     <nav class="primary-nav" aria-label="Primary navigation">
       <ul class="nav | flex" id="header-navigation">
-        <li><a href="../index.html" aria-label="Redirect's you to the home page" >Home</a></li>
+        <li><a href="../index.html" aria-label="Redirect's you to the home page">Home</a></li>
         <li><a href="./history.html" class="small" aria-label="Redirect's you to the history page">History</a></li>
-        <li><a href="./techniques.html" class="small"
-            aria-label="Redirect's you to the techniques page">Techniques</a></li>
-        <li><a href="./equipment.html" class="small"
-            aria-label="Redirect's you to the equipment page">Equipment</a></li>
+        <li><a href="./techniques.html" class="small" aria-label="Redirect's you to the techniques page">Techniques</a>
+        </li>
+        <li><a href="./equipment.html" class="small" aria-label="Redirect's you to the equipment page">Equipment</a>
+        </li>
         <li><a href="#" aria-current="page">Contact</a></li>
       </ul>
     </nav>
@@ -35,25 +35,63 @@
 
   <!-- MAIN -->
   <main>
- </main>
+    <section class="contact | section flow" aria-labelledby="contact-title">
+      <h1 class="heading innerpages | container" id="contact-title">Contact</h1>
+      <iframe class="contact-map container" data-type="full-bleed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.740710779319!2d5.066656058158964!3d51.682889019715006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c693dc407ee167%3A0x1601ef12c27d7078!2sVDHAMMEN%20GYM%20WAALWIJK!5e0!3m2!1snl!2snl!4v1709131508270!5m2!1snl!2snl"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- contact form -->
+      <div class="contact-form container">
+        <h2 class="heading">Connect with us</h2>
+        <div class="contact-form_address">
+          <h3 class="heading">address</h3>
+          <p>Sint Crispijnstraat 95B</p>
+          <p>5144 AJ</p>
+          <p>Waalwijk</p>
+        </div>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi." method="get" class="flow">
+          <p class="form-group">
+            <label for="form-name">Name:*</label>
+            <input type="text" name="name" id="form-name" placeholder="John Doe" required>
+          </p>
+          <p class="form-group">
+            <label for="form-email">Email:*<small>(Johndoe@gmail.com)</small>:</label>
+            <input type="email" name="email" id="form-email" placeholder="Johndoe@gmail.com" required>
+          </p>
+          <p class="form-group">
+            <label for="form-phone">Phone:</label>
+            <input type="tel" name="form-phone" id="form-phone" placeholder="+31612345678" maxlength="12"
+              minlength="10">
+          </p>
+          <p class="form-group">
+            <label for="form-message">Message:*</label>
+            <textarea name="message" id="form-message" cols="20" rows="4" required></textarea>
+          </p>
+          <button type="submit" class="btn accent">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="page-footer | container">
     <a href="/index.html" class="logo-kickboksen" aria-label="Website logo with a link to the home page"></a>
     <nav class="secondary-nav" aria-label="Secondary navigation">
       <ul class="header-navigation nav | flex">
-        <li><a href="../index.html" aria-label="Redirect's you to the home page" >Home</a></li>
+        <li><a href="../index.html" aria-label="Redirect's you to the home page">Home</a></li>
         <li><a href="./history.html" class="small" aria-label="Redirect's you to the history page">History</a></li>
-        <li><a href="./techniques.html" class="small"
-            aria-label="Redirect's you to the techniques page">Techniques</a></li>
-        <li><a href="./equipment.html" class="small"
-            aria-label="Redirect's you to the equipment page">Equipment</a></li>
+        <li><a href="./techniques.html" class="small" aria-label="Redirect's you to the techniques page">Techniques</a>
+        </li>
+        <li><a href="./equipment.html" class="small" aria-label="Redirect's you to the equipment page">Equipment</a>
+        </li>
         <li><a href="#" aria-current="page">Contact</a></li>
       </ul>
     </nav>
     <p>&copy; Copyright holder 2024</p>
 
   </footer>
-
 </body>
 
 </html>
