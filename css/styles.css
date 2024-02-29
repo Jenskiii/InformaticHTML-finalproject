@@ -724,7 +724,7 @@ h3.heading {
 /*// EQUIPMENT INFORMATION // */
 .equipment-information .even-columns {
   border-block: solid 1px hsl(var(--clr-purple-400) / 0.5);
-  padding-block: 2rem;
+  padding-block: 4rem;
 }
 .equipment-information li {
   list-style: "\1F94A";
